@@ -74,9 +74,8 @@ class Server:
         start, end = index_range(page, page_size)
         return dataset[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict
-    
-    [str, Union[int, List[List], None]]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[
+            str, Union[int, List[List], None]]:
         """
         Retrieve and return a hypermedia-formatted page of data.
 
