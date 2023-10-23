@@ -61,9 +61,12 @@ class Server:
         Example:
             >>> server = Server()
             >>> server.get_page(1, 3)
-            [['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Olivia', '172', '1'],
-             ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Chloe', '112', '2'],
-             ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Sophia', '104', '3']]
+            [['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER',
+                'Olivia', '172', '1'],
+             ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER',
+                 'Chloe', '112', '2'],
+             ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER',
+                 'Sophia', '104', '3']]
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
